@@ -1,4 +1,3 @@
-# data_analysis
 ## Proyectos de análisis de datos en Python
 
 ### 2022/03 "25_mayores_retailers_USA"
