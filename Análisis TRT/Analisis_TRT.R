@@ -36,7 +36,7 @@ nombre_datos_C.PD <- "Diferencia(Cuerpo - Pliegue derecho)"
 
 
 
-#Primera hip?tesis sobre C.PD:
+#Primera hipótesis sobre C.PD:
 # H0 : mu= 0
 # Ha : mu <> 0
 
@@ -61,7 +61,7 @@ respuesta1cpd <-"No hay evidencia suficiente para determinar que la TRT del cuer
 #Si |z| > |z.media.lim| -> puedo rechazar H0, sino no tengo evidencia suficiente
 
 
-#Segunda hip?tesis sobre C.PD
+#Segunda hipótesis sobre C.PD
 #H0 : mu <= 0
 #Ha : mu > 0
 
@@ -80,10 +80,10 @@ respuesta2cpd <-"Con un 95% de confianza, se puede decir que la diferencia entre
 respuesta2cpd <-"No hay evidencia suficiente para determinar que la diferencia entre la TRT del cuerpo es mayor a la TRT del pliegue derecho (Rechazar H0 al 95% de confianza)"
 }
 
-#Tercera hip?tesis sobre C.PD
+#Tercera hipótesis sobre C.PD
 #H0 : mu >= 0
 #Ha : mu < 0
-# Si z < - Z cr?tico -> Puedo rechazar H0
+# Si z < - Z crítico -> Puedo rechazar H0
 
 if (z < -z.lim99.9){
 respuesta3cpd <-"Con un 99.9% de confianza, se puede decir que la diferencia entre la TRT del cuerpo y del pliegue derecho es menor que 0 (T Cuerpo > T pliegue)"
@@ -111,7 +111,7 @@ nombre_datos_C.PD2 <- "Diferencia(Cuerpo - Pliegue derecho (10%))"
 
 
 
-#Primera hip?tesis sobre C.PD2:
+#Primera hipótesis sobre C.PD2:
 # H0 : mu= 0
 # Ha : mu <> 0
 
@@ -136,7 +136,7 @@ respuesta1cpd2 <-"No hay evidencia suficiente para determinar que la TRT del cue
 #Si |z| > |z.media.lim| -> puedo rechazar H0, sino no tengo evidencia suficiente
 
 
-#Segunda hip?tesis sobre C.PD2
+#Segunda hipótesis sobre C.PD2
 #H0 : mu <= 0
 #Ha : mu > 0
 
@@ -155,10 +155,10 @@ respuesta2cpd2 <-"Con un 95% de confianza, se puede decir que la diferencia entr
 respuesta2cpd2 <-"No hay evidencia suficiente para determinar que la diferencia entre la TRT del cuerpo es mayor a la TRT del pliegue derecho (Rechazar H0 al 95% de confianza)"
 }
 
-#Tercera hip?tesis sobre C.PD2
+#Tercera hipótesis sobre C.PD2
 #H0 : mu >= 0
 #Ha : mu < 0
-# Si z < - Z cr?tico -> Puedo rechazar H0
+# Si z < - Z crítico -> Puedo rechazar H0
 
 if (z < -z.lim99.9){
 respuesta3cpd2 <-"Con un 99.9% de confianza, se puede decir que la diferencia entre la TRT del cuerpo y del pliegue derecho es menor que 0 (T Cuerpo > T pliegue)"
@@ -185,7 +185,7 @@ modacpi<-mean(mlv(C.PI,method="mfv"))
 nombre_datos_C.PI <- "Diferencia(Cuerpo - Pliegue izquierdo)" 
 
 
-#Primera hip?tesis sobre C.PI:
+#Primera hipótesis sobre C.PI:
 # H0 : mu= 0
 # Ha : mu <> 0
 
@@ -207,7 +207,7 @@ respuesta1cpi<-"No hay evidencia suficiente para determinar que la diferencia qu
 #Si |z| > |z.media.lim| -> puedo rechazar H0, sino no tengo evidencia suficiente
 
 
-#Segunda hip?tesis sobre C.PI
+#Segunda hipótesis sobre C.PI
 #H0 : mu <= 0
 #Ha : mu > 0
 
@@ -223,11 +223,11 @@ respuesta2cpi<-"Con un 95% de confianza, se puede decir que la diferencia entre 
 respuesta2cpi<-"No hay evidencia suficiente para determinar que la diferencia entre la TRT del cuerpo es mayor a la TRT del pliegue izquierdo (Rechazar H0 al 95% de confianza)"
 }
 
-#Tercera hip?tesis sobre C.PI
+#Tercera hipótesis sobre C.PI
 #H0 : mu >= 0
 #Ha : mu < 0
 
-# Si z < - Z cr?tico -> Puedo rechazar H0
+# Si z < - Z crítico -> Puedo rechazar H0
 
 if (z < -z.lim99.9){
 respuesta3cpi<-"Con un 99.9% de confianza, se puede decir que la diferencia entre la TRT del cuerpo y del pliegue izquierdo es menor que 0 (T Cuerpo > T pliegue)"
@@ -250,7 +250,7 @@ modapdpi<-mean(mlv(PD.PI,method="mfv"))
 nombre_datos_PD.PI <- "Diferencia(Pliegue derecho - Pliegue izquierdo)" 
 
 
-#Primera hip?tesis sobre PD.PI:
+#Primera hipótesis sobre PD.PI:
 # H0 : mu= 0
 # Ha : mu <> 0
 #Si |z| > |z.media.lim| -> puedo rechazar H0, sino no tengo evidencia suficiente
@@ -268,7 +268,7 @@ respuesta1pdpi<-"Con un 95% de confianza, se puede decir que la diferencia entre
 respuesta1pdpi<-"No hay evidencia suficiente para determinar que la diferencia que la TRT del pliegue derecho es distinta a la TRT del pliegue izquierdo (Rechazar H0 con un 95% de confianza)"
 }
 
-#Segunda hip?tesis sobre PD.PI
+#Segunda hipótesis sobre PD.PI
 #H0 : mu <= 0
 #Ha : mu > 0
 
@@ -283,11 +283,11 @@ respuesta2pdpi<-"Con un 95% de confianza, se puede decir que la diferencia entre
 respuesta2pdpi<-"No hay evidencia suficiente para determinar que la diferencia entre la TRT del pliegue derecho es mayor a la TRT del pliegue izquierdo (Rechazar H0 al 95% de confianza)"
 }
 
-#Tercera hip?tesis sobre PD.PI
+#Tercera hipótesis sobre PD.PI
 #H0 : mu >= 0
 #Ha : mu < 0
 
-# Si z < - Z cr?tico -> Puedo rechazar H0
+# Si z < - Z crítico -> Puedo rechazar H0
 
 if (z < -z.lim99.9){
 respuesta3pdpi<-"Con un 99.9% de confianza, se puede decir que la diferencia entre la TRT del pliegue derecho y del pliegue izquierdo es menor que 0 (T pliegue derecho > T pliegue izquierdo)"
@@ -301,7 +301,7 @@ respuesta3pdpi<-"No hay evidencia suficiente para determinar que la diferencia e
 
 
 
-#C?lculo de Beta
+#Cálculo de Beta
 
 ncpd<-length(C.PD)
 ncpd2<-length(C.PD2)
@@ -407,7 +407,7 @@ beta.mayor.muestra.pdpi95<- pnorm(iniciopdpi95,mean=mediapdpi,sd=desviopdpi/sqrt
 mediacpd
 desviocpd
 ncpd
-# IC = x +- (valor cr?tico de tolerancia) * s
+# IC = x +- (valor crítico de tolerancia) * s
 
 #Intervalo unilateral
 # Confianza 95%
@@ -422,18 +422,18 @@ c99p99<-2.883
 #Al resultado de las matrices tengo que agregar la media
 matriz.tol.95<- matrix(c(c95p90,c95p95,c95p99),nrow=3)
 IC95.cpd<-matriz.tol.95*desviocpd
-dimnames(IC95.cpd)<-list(c("90% de la poblaci?n", "95% de la poblaci?n","99% de la poblaci?n"),NULL)
+dimnames(IC95.cpd)<-list(c("90% de la población", "95% de la población","99% de la población"),NULL)
 IC95.cpd
 matriz.tol.99<- matrix(c(c99p90,c99p95,c99p99),nrow=3)
 IC99.cpd<-matriz.tol.99*desviocpd
-dimnames(IC99.cpd)<-list(c("90% de la poblaci?n", "95% de la poblaci?n","99% de la poblaci?n"),NULL)
+dimnames(IC99.cpd)<-list(c("90% de la población", "95% de la población","99% de la población"),NULL)
 IC99.cpd
 
 # C-PD2
 mediacpd2
 desviocpd2
 ncpd2
-# IC = x +- (valor cr?tico de tolerancia) * s
+# IC = x +- (valor crítico de tolerancia) * s
 
 #Intervalo unilateral
 # Confianza 95%
@@ -458,20 +458,20 @@ c99p9980<-2.924
 #Al resultado de las matrices tengo que agregar la media
 matriz.tol.95<- matrix(c(c95p9080,c95p9580,c95p9980),nrow=3)
 IC95.cpd2<-matriz.tol.95*desviocpd2
-dimnames(IC95.cpd2)<-list(c("90% de la poblaci?n", "95% de la poblaci?n","99% de la poblaci?n"),NULL)
+dimnames(IC95.cpd2)<-list(c("90% de la población", "95% de la población","99% de la población"),NULL)
 IC95.cpd2
 matriz.tol.99<- matrix(c(c99p9080,c99p9580,c99p9980),nrow=3)
 IC99.cpd2<-matriz.tol.99*desviocpd2
-dimnames(IC99.cpd2)<-list(c("90% de la poblaci?n", "95% de la poblaci?n","99% de la poblaci?n"),NULL)
+dimnames(IC99.cpd2)<-list(c("90% de la población", "95% de la población","99% de la población"),NULL)
 IC99.cpd2
 
 matriz.tol.95<- matrix(c(c95p90,c95p95,c95p99),nrow=3)
 IC95.cpi<-matriz.tol.95*desviocpi
-dimnames(IC95.cpi)<-list(c("90% de la poblaci?n", "95% de la poblaci?n","99% de la poblaci?n"),NULL)
+dimnames(IC95.cpi)<-list(c("90% de la población", "95% de la población","99% de la población"),NULL)
 IC95.cpi
 matriz.tol.99<- matrix(c(c99p90,c99p95,c99p99),nrow=3)
 IC99.cpi<-matriz.tol.99*desviocpi
-dimnames(IC99.cpi)<-list(c("90% de la poblaci?n", "95% de la poblaci?n","99% de la poblaci?n"),NULL)
+dimnames(IC99.cpi)<-list(c("90% de la población", "95% de la población","99% de la población"),NULL)
 IC99.cpi
 
 #------------------------------------------------------------------------------------------
@@ -489,11 +489,11 @@ desviocpd
 shapiro.test(C.PD)
 lillie.test(C.PD)
 
-#	Calculo asimetr?a y curtosis
+#	Calculo asimetría y curtosis
 skewness(C.PD)
 kurtosis (C.PD)
 
-#		Primera hip?tesis sobre C.PD:
+#		Primera hipótesis sobre C.PD:
 # 	H0 : mu= 0
 # 	Ha : mu <> 0
 #	Si |z| > |z.media.lim| -> puedo rechazar H0, sino no tengo evidencia suficiente
@@ -503,7 +503,7 @@ z.media.lim99
 z.media.lim99.9
 respuesta1cpd
 
-#		Segunda hip?tesis sobre C.PD
+#		Segunda hipótesis sobre C.PD
 #	H0 : mu <= 0
 #	Ha : mu > 0
 #	Si z > z.lim -> Puedo rechazar H0
@@ -513,10 +513,10 @@ z.lim99
 z.lim99.9
 respuesta2cpd
 
-#		Tercera hip?tesis sobre C.PD
+#		Tercera hipótesis sobre C.PD
 #	H0 : mu >= 0
 #	Ha : mu < 0
-#	Si z < - Z cr?tico -> Puedo rechazar H0
+#	Si z < - Z crítico -> Puedo rechazar H0
 zcpd
 z.lim95
 z.lim99
@@ -538,11 +538,11 @@ desviocpd2
 shapiro.test(C.PD2)
 lillie.test(C.PD2)
 
-#	Calculo asimetr?a y curtosis
+#	Calculo asimetría y curtosis
 skewness(C.PD2)
 kurtosis (C.PD2)
 
-#		Primera hip?tesis sobre C.PD2:
+#		Primera hipótesis sobre C.PD2:
 # 	H0 : mu= 0
 # 	Ha : mu <> 0
 #	Si |z| > |z.media.lim| -> puedo rechazar H0, sino no tengo evidencia suficiente
@@ -552,7 +552,7 @@ z.media.lim99
 z.media.lim99.9
 respuesta1cpd2
 
-#		Segunda hip?tesis sobre C.PD2
+#		Segunda hipótesis sobre C.PD2
 #	H0 : mu <= 0
 #	Ha : mu > 0
 #	Si z > z.lim -> Puedo rechazar H0
@@ -562,10 +562,10 @@ z.lim99
 z.lim99.9
 respuesta2cpd2
 
-#		Tercera hip?tesis sobre C.PD2
+#		Tercera hipótesis sobre C.PD2
 #	H0 : mu >= 0
 #	Ha : mu < 0
-#	Si z < - Z cr?tico -> Puedo rechazar H0
+#	Si z < - Z crítico -> Puedo rechazar H0
 zcpd2
 z.lim95
 z.lim99
@@ -584,11 +584,11 @@ desviocpi
 #	Si p-value > 0.05, los datos son normales
 shapiro.test(C.PI)
 lillie.test(C.PI)
-#	Calculo asimetr?a y curtosis
+#	Calculo asimetría y curtosis
 skewness(C.PI)
 kurtosis (C.PI)
 
-#		Primera hip?tesis sobre C.PI:
+#		Primera hipótesis sobre C.PI:
 # 	H0 : mu= 0
 # 	Ha : mu <> 0
 #	Si |z| > |z.media.lim| -> puedo rechazar H0, sino no tengo evidencia suficiente
@@ -597,7 +597,7 @@ z.media.lim95
 z.media.lim99
 z.media.lim99.9
 respuesta1cpi
-#		Segunda hip?tesis sobre C.PI
+#		Segunda hipótesis sobre C.PI
 #	H0 : mu <= 0
 #	Ha : mu > 0
 #	Si z > z.lim -> Puedo rechazar H0
@@ -607,10 +607,10 @@ z.lim99
 z.lim99.9
 respuesta2cpi
 
-#		Tercera hip?tesis sobre C.PI
+#		Tercera hipótesis sobre C.PI
 #	H0 : mu >= 0
 #	Ha : mu < 0
-#	Si z < - Z cr?tico -> Puedo rechazar H0
+#	Si z < - Z crítico -> Puedo rechazar H0
 zcpi
 z.lim95
 z.lim99
@@ -632,11 +632,11 @@ desviopdpi
 shapiro.test(PD.PI)
 lillie.test(PD.PI)
 
-#	Calculo asimetr?a y curtosis
+#	Calculo asimetría y curtosis
 skewness(PD.PI)
 kurtosis (PD.PI)
 
-#		Primera hip?tesis sobre PD.PI:
+#		Primera hipótesis sobre PD.PI:
 # 	H0 : mu= 0
 # 	Ha : mu <> 0
 #	Si |z| > |z.media.lim| -> puedo rechazar H0, sino no tengo evidencia suficiente
@@ -645,7 +645,7 @@ z.media.lim95
 z.media.lim99
 z.media.lim99.9
 respuesta1pdpi
-#		Segunda hip?tesis sobre PD.PI
+#		Segunda hipótesis sobre PD.PI
 #	H0 : mu <= 0
 #	Ha : mu > 0
 #	Si z > z.lim -> Puedo rechazar H0
@@ -655,10 +655,10 @@ z.lim99
 z.lim99.9
 respuesta2pdpi
 
-#		Tercera hip?tesis sobre PD.PI
+#		Tercera hipótesis sobre PD.PI
 #	H0 : mu >= 0
 #	Ha : mu < 0
-#	Si z < - Z cr?tico -> Puedo rechazar H0
+#	Si z < - Z crítico -> Puedo rechazar H0
 zpdpi
 z.lim95
 z.lim99
@@ -668,10 +668,10 @@ respuesta3pdpi
 #--------------------------------------------------------------------------------------------------------------
 #Tablas de resultados
 
-#	Descripci?n de datos
+#	Descripción de datos
 
 tabla.resultados<-matrix(ncol=4,nrow=10,byrow=F)
-rownames(tabla.resultados)<- c("Media aritm?tica","Media recortada (10%)","Media recortada (20%)","Mediana","Desv?o Est?ndar","Moda","M?nimo","M?ximo","Primer Cuartil","Tercer Cuartil")
+rownames(tabla.resultados)<- c("Media aritmética","Media recortada (10%)","Media recortada (20%)","Mediana","Desvío Estándar","Moda","Mínimo","Máximo","Primer Cuartil","Tercer Cuartil")
 colnames(tabla.resultados)<-c("Dif. C-PD","Dif. C-PD2","Dif. C-PI","Dif. PD-PI")
 tabla.resultados[,1]<-round(c(mediacpd,mediacpd5,mediacpd10,medianacpd,desviocpd,modacpd,summary(C.PD)[1],summary(C.PD)[6],summary(C.PD)[2],summary(C.PD)[5]),3)
 tabla.resultados[,2]<-round(c(mediacpd2,mediacpd25,mediacpd210,medianacpd2,desviocpd2,modacpd2,summary(C.PD2)[1],summary(C.PD2)[6],summary(C.PD2)[2],summary(C.PD2)[5]),3)
@@ -679,18 +679,18 @@ tabla.resultados[,3]<-round(c(mediacpi,mediacpi5,mediacpi10,medianacpi,desviocpi
 tabla.resultados[,4]<-round(c(mediapdpi,mediapdpi5,mediapdpi10,medianapdpi,desviopdpi,modapdpi,summary(PD.PI)[1],summary(PD.PI)[6],summary(PD.PI)[2],summary(PD.PI)[5]),3)
 
 
-#	Verificaci?n de normalidad
+#	Verificación de normalidad
 
 tabla.normalidad<-matrix(ncol=4,nrow=4,byrow=T)
 colnames(tabla.normalidad)<-c("Dif. C-PD","Dif. C-PD2","Dif. C-PI","Dif. PD-PI")
-rownames(tabla.normalidad)<-c("P-value (Shapiro-Wilks)","P-value (Lilliefors)","Asimetr?a","Curtosis")
+rownames(tabla.normalidad)<-c("P-value (Shapiro-Wilks)","P-value (Lilliefors)","Asimetría","Curtosis")
 tabla.normalidad[,1]<-round(c(shapiro.test(C.PD)$p.value,lillie.test(C.PD)$p.value,skewness(C.PD),kurtosis (C.PD)),3)
 tabla.normalidad[,2]<-round(c(shapiro.test(C.PD2)$p.value,lillie.test(C.PD2)$p.value,skewness(C.PD2),kurtosis (C.PD2)),3)
 tabla.normalidad[,3]<-round(c(shapiro.test(C.PI)$p.value,lillie.test(C.PI)$p.value,skewness(C.PI),kurtosis (C.PI)),3)
 tabla.normalidad[,4]<-round(c(shapiro.test(PD.PI)$p.value,lillie.test(PD.PI)$p.value,skewness(PD.PI),kurtosis (PD.PI)),3)
 
 
-#	Hip?tesis
+#	Hipótesis
 # Ho: mu= mu0
 # Resultado: 0 - No rechazo Ho; 1 -Rechazo Ho
 tabla.hipotesis.distinto<-matrix(ncol=4,nrow=6,byrow=T)
@@ -743,14 +743,14 @@ respuesta3pdpi
 
 #95% de confianza
 tIT95<-matrix(nrow=3,ncol=3,byrow=T)
-dimnames(tIT95)<-list(c("90% de la poblaci?n", "95% de la poblaci?n","99% de la poblaci?n"),c("Dif. C-PD","Dif. C-PD2","Dif. C-PI"))
+dimnames(tIT95)<-list(c("90% de la población", "95% de la población","99% de la población"),c("Dif. C-PD","Dif. C-PD2","Dif. C-PI"))
 tIT95[,1]<-IC95.cpd
 tIT95[,2]<-IC95.cpd2
 tIT95[,3]<-IC95.cpi
 
 #99% de confianza
 tIT99<-matrix(nrow=3,ncol=3,byrow=T)
-dimnames(tIT99)<-list(c("90% de la poblaci?n", "95% de la poblaci?n","99% de la poblaci?n"),c("Dif. C-PD","Dif. C-PD2","Dif. C-PI"))
+dimnames(tIT99)<-list(c("90% de la población", "95% de la población","99% de la población"),c("Dif. C-PD","Dif. C-PD2","Dif. C-PI"))
 tIT99[,1]<-IC99.cpd
 tIT99[,2]<-IC99.cpd2
 tIT99[,3]<-IC99.cpi
