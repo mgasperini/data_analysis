@@ -1,7 +1,7 @@
 library(moments)
 library(modeest)
 library(nortest)
-library(ggpubr)
+library(ggplot2)
 library(dplyr)
 
 # Se cargan los valores
