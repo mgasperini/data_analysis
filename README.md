@@ -14,7 +14,7 @@
 
 ____________________________________________________________________________________________________________________________________
 
-## Python and R Data Analysis projects.
+## Data analysis projects in Python and R.
 
 ### 2022/03 "25_mayores_retailers_USA" (Python)
 - Analysis of the 25 largest retailers in the USA. Project carried out to finalize the challenge "Project #PlatziChallenge Datacademy 2022" of the Platzi platform.
